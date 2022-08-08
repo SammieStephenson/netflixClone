@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/SammieStephenson/netflixClone/issues"
   },
-  "homepage": "https://github.com/SammieStephenson/netflixClone#readme"
+  "homepage": "https://github.com/SammieStephenson/netflixClone#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.19"
+  }
 }
