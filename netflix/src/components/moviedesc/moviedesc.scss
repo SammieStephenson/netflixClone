@@ -1,0 +1,156 @@
+
+.featured {
+    height: 90vh;
+    position: relative;
+
+
+   
+  
+    .category {
+      position: absolute;
+      top: 80px;
+      left: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      color: white;
+      display: flex;
+      align-items: center;
+  
+      select {
+        cursor: pointer;
+        background-color: var(--main-color);
+        border: 1px solid white;
+        color: white;
+        margin-left: 20px;
+        padding: 5px;
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .info {
+      width: 35%;
+      position: absolute;
+      left: 50px;
+      bottom: 100px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+  
+      img {
+        width: 400px;
+      }
+  
+      .desc {
+        margin: 20px 0px;
+      }
+      
+  
+      .buttons {
+        display: flex;
+  
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: 500;
+          margin-right: 10px;
+          cursor: pointer;
+  
+          &.play {
+            background-color: white;
+            color: var(--main-color);
+          }
+  
+          &.more {
+            background-color: gray;
+            color: white;
+          }
+  
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+
+  p.para{
+     color:white;
+     position: absolute;
+     top: 5px;
+     left: 16px;
+     font-size: 20px;
+
+  }
+
+  p.para::first-letter{
+      color:red;
+      font-size: 200%;
+  }
+
+  p.paratwo{
+    color:rgb(98, 212, 98);
+    position: absolute;
+    top: 90px;
+    left: 16px;
+    font-size: 20px;
+  }
+
+  p.title{
+    color:white;
+    position: absolute;
+    top: 25px;
+    left: 16px;
+    font-size: 40px;
+
+  }
+
+
+  .movie{ 
+    padding-left: 30px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.714);
+}
+
+    // container{
+    //     display: -webkit-flex;
+    //     -webkit-flex-wrap: wrap;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     background-color: grey;
+    // }
+
+
+        img.elite{
+            width:19%;
+            margin-top: 130px;
+
+           
+        }
+
+        img.cable{
+            width:20%;
+            margin-top: 130px;
+           
+
+        }
+
+        img.stranger{
+            width:19%;
+            margin-top: 130px;
+            padding-right: 40px;
+
+        }
