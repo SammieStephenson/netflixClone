@@ -26,7 +26,13 @@ app.get('/test', (req, res) => {
 });
 
 app.get('/users', (req, res) => {
-	connection.query('SELECT * FROM userInfo');
+	connection.query('SELECT * FROM userInfo', (err, result) => {
+		if (err) {
+			console.log(err);
+		} else {
+			res.send(result);
+		}
+	});
 });
 
 //creating post method for inserting data from frontend
