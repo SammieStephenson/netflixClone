@@ -1,4 +1,6 @@
 import './login.scss';
+import {useState} from 'react'
+import Axios from 'axios'
 
 export default function Login() {
 	const [email, setEmail] = useState('');
@@ -38,9 +40,9 @@ export default function Login() {
 						placeholder='Password'
 						onChange={(e) => setPassword(e.target.value)}
 					/>
-					<button className='loginButton' onClick={addUser}>
-						Sign In
-					</button>
+					<input type="submit" value="signin" className='loginButton' onClick={addUser}>
+						
+					</input>
 					<span>
 						New to Netflix? <b>Sign up now.</b>
 					</span>

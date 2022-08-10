@@ -154,3 +154,51 @@
             padding-right: 40px;
 
         }
+
+        img.outer{
+            width:20%;
+            margin-top: 160px;
+            padding-right: 40px;
+        }
+
+
+        p.pop{
+            position: absolute;
+           bottom: -50px;
+            left: 16px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+        }
+
+      
+
+        
+            .responsive {
+                max-width: 100%;
+                height: auto;
+        }
+
+    //     p.desc{
+    // color:white;
+    
+    // top: 90px;
+    // left: 16px;
+    // font-size: 20px;
+            
+
+    //     }
+
+        
+    @media screen and (min-width: 390px) {
+        .desc {
+          font-size: 2em;
+        }
+      }
+      
+      @media screen and (max-width: 800px) {
+        .desc {
+          font-size: 2em;
+        }
+      }
+   
