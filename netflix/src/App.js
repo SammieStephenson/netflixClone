@@ -1,29 +1,30 @@
-// import Navbar from "./Navbar"
-import Moviedesc from "./components/moviedesc/Moviedesc";
-import Login from "./pages/login/Login";
-// import Gallery from "./Gallery"
-import { Route, Routes } from "react-router-dom"
-// import Footer from "./Footer"
-
+import React from 'react';
+import './App.css';
+import Row from './Row';
+import requests from './requests';
+import Banner from "./Banner";
+import Nav from "./Nav"
 
 function App() {
   return (
-  //  <Login/>
-  <Moviedesc/>
-  )
-    // <>
-      {/* <Navbar /> */}
-      {/* <div className="container"> */}
-
-        
-        {/* <Routes> */}
-          {/* <Route path="/" element={<Home />} /> */}
-          {/* <Route path="/login" element={<Login />} /> */}
-          {/* <Route path="/gallery" element={<Gallery />} /> */}
-        {/* </Routes> */}
-      {/* </div> */}
-      {/* <Footer /> */}
-    // </>
-  
+    <div className="App">
+      {/* <h1>lets go fake netflix for the win</h1> */}
+      
+      <Nav />
+      <Banner />
+      <Row title="NETFLIX ORIGINALS"
+       fetchUrl={requests.fetchNetflixOriginals} 
+       isLargeRow
+       />
+      <Row title="Top Rated" fetchUrl={requests.fetchTopRated}/> 
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}/> 
+      <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies}/> 
+      <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies}/> 
+      <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}/> 
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumantaries}/> 
+      
+    </div>
+  );
 }
+
 export default App;
