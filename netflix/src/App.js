@@ -1,22 +1,33 @@
 import Navbar from "./Navbar"
-import Home from "./Home"
-import Login from "./Login"
-import Gallery from "./Gallery"
-import { Route, Routes } from "react-router-dom"
+// import Home from "./Home"
+import Login from "./pages/login/Login";
+// import Gallery from "./Gallery"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Footer from "./Footer"
 
-function App() {
+export default function App() {
   return (
-    <>
-      <Navbar />
-      <div className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/gallery" element={<Gallery />} />
-        </Routes>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Switch>
+            <Route path="/login">
+              <Login />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/login">
+              <Login />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route path="/login">
+              <Login />
+            </Route>
+          </Switch>
+        </div>
       </div>
-      <Footer />
-    </>
+    </Router>
   );
 }
