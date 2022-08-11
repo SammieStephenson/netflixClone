@@ -15,17 +15,9 @@
     "react-router-dom": "^6.3.0",
     "react-script": "^2.0.5",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
+    "react-youtube": "^9.0.3",
     "sass": "^1.54.4",
-    "switch": "^0.0.0",
-=======
-<<<<<<< HEAD
-    "sass": "^1.54.4"
-=======
-    "sass": "^1.54.3",
->>>>>>> 1a759abb067a6a907f78995c05d6f8478e6704c5
-    "web-vitals": "^2.1.4"
->>>>>>> edc86e553227a7578c14d3e113feb50149518694
+    "switch": "^0.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
