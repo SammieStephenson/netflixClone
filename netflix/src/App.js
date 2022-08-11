@@ -1,7 +1,7 @@
+import Moviedesc from "./components/moviedesc/Moviedesc";
 import Navbar from "./Navbar"
 // import Home from "./Home"
-import Moviedesc from "./components/moviedesc/Moviedesc";
-import Login from "./pages/login/Login";
+import Login from "./pages/login/Login"
 // import Gallery from "./Gallery"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import Footer from "./Footer"
